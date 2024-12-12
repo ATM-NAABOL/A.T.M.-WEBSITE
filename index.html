@@ -663,9 +663,11 @@
 
 <script>
 //***************DATOS SENCIBLES*************** 
-const API_KEY = 'AIzaSyBJuRk7BogPQDlwwPdmi9_wru1Y75xspZw';
-const SPREADSHEET_ID = '1yIIbD_56ze6FsHR6WKeId5ZyGwgq8qU7DXmCMwfTSPo';
 
+const SPREADSHEET_ID = '1yIIbD_56ze6FsHR6WKeId5ZyGwgq8qU7DXmCMwfTSPo';
+const API_KEY = process.env.API_KEY;
+console.log(apiKey);
+    
 //***************OPCIONES POR DEFECTO AL CARGAR LA PAGINA***************
 showSection('Inicio');
 const objeto = document.getElementById("display-search-container");
